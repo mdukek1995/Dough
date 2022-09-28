@@ -11,7 +11,8 @@ import SwiftUI
 struct DoughApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView();
+            AccountView()
         }
     }
 }
