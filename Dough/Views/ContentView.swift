@@ -22,6 +22,7 @@ struct ContentView: View {
                 }
         }
         .font(.headline)
+        .padding(.top, 10.0)
 
     }
 }

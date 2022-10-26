@@ -28,7 +28,9 @@ struct AccountView: View{
                         .font(.title2)
                         .bold()
                         .padding(.horizontal, 5.0)
-                    Image(systemName: "slider.vertical.3")
+                    NavigationLink(destination: ExpensesView()) {
+                        Image(systemName: "slider.vertical.3")
+                    }
                 }
                 Text("$" + String(accountCalculations.expenses))
                     .padding(.vertical, 20.0)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		526C2D82290992F3002445EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C2D81290992F3002445EF /* HomeView.swift */; };
+		526C2D852909C012002445EF /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C2D842909C012002445EF /* ExpensesView.swift */; };
 		52C11EA128D797ED00020522 /* DoughApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C11EA028D797ED00020522 /* DoughApp.swift */; };
 		52C11EA528D797F100020522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C11EA428D797F100020522 /* Assets.xcassets */; };
 		52C11EA828D797F100020522 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C11EA728D797F100020522 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		526C2D81290992F3002445EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		526C2D842909C012002445EF /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
 		52C11E9D28D797ED00020522 /* Dough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C11EA028D797ED00020522 /* DoughApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughApp.swift; sourceTree = "<group>"; };
 		52C11EA428D797F100020522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				52D7F27628F7115800232372 /* ContentView.swift */,
 				52D7F27028F493F300232372 /* AccountView.swift */,
 				526C2D81290992F3002445EF /* HomeView.swift */,
+				526C2D842909C012002445EF /* ExpensesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D7F27128F493F300232372 /* AccountView.swift in Sources */,
+				526C2D852909C012002445EF /* ExpensesView.swift in Sources */,
 				52D7F27728F7115800232372 /* ContentView.swift in Sources */,
 				52C11EA128D797ED00020522 /* DoughApp.swift in Sources */,
 				526C2D82290992F3002445EF /* HomeView.swift in Sources */,
