@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526C2D82290992F3002445EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C2D81290992F3002445EF /* HomeView.swift */; };
 		52C11EA128D797ED00020522 /* DoughApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C11EA028D797ED00020522 /* DoughApp.swift */; };
 		52C11EA528D797F100020522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C11EA428D797F100020522 /* Assets.xcassets */; };
 		52C11EA828D797F100020522 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C11EA728D797F100020522 /* Preview Assets.xcassets */; };
 		52C11EB228D797F200020522 /* DoughTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C11EB128D797F200020522 /* DoughTests.swift */; };
 		52C11EBC28D797F200020522 /* DoughUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C11EBB28D797F200020522 /* DoughUITests.swift */; };
 		52C11EBE28D797F200020522 /* DoughUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C11EBD28D797F200020522 /* DoughUITestsLaunchTests.swift */; };
-		52D7F26F28F493B300232372 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7F26E28F493B300232372 /* HomeView.swift */; };
 		52D7F27128F493F300232372 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7F27028F493F300232372 /* AccountView.swift */; };
 		52D7F27328F4943300232372 /* AccountCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7F27228F4943300232372 /* AccountCalculations.swift */; };
 		52D7F27728F7115800232372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7F27628F7115800232372 /* ContentView.swift */; };
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		526C2D81290992F3002445EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		52C11E9D28D797ED00020522 /* Dough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C11EA028D797ED00020522 /* DoughApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughApp.swift; sourceTree = "<group>"; };
 		52C11EA428D797F100020522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,8 +47,7 @@
 		52C11EB728D797F200020522 /* DoughUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoughUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C11EBB28D797F200020522 /* DoughUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughUITests.swift; sourceTree = "<group>"; };
 		52C11EBD28D797F200020522 /* DoughUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		52D7F26E28F493B300232372 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../../../.Trash/Views/HomeView.swift; sourceTree = "<group>"; };
-		52D7F27028F493F300232372 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountView.swift; path = Dough/Models/AccountView.swift; sourceTree = SOURCE_ROOT; };
+		52D7F27028F493F300232372 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountView.swift; path = Dough/Views/AccountView.swift; sourceTree = SOURCE_ROOT; };
 		52D7F27228F4943300232372 /* AccountCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCalculations.swift; sourceTree = "<group>"; };
 		52D7F27628F7115800232372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		526C2D8329099309002445EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52D7F27628F7115800232372 /* ContentView.swift */,
+				52D7F27028F493F300232372 /* AccountView.swift */,
+				526C2D81290992F3002445EF /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		52C11E9428D797ED00020522 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				52C11EA028D797ED00020522 /* DoughApp.swift */,
-				52D7F27628F7115800232372 /* ContentView.swift */,
-				52D7F26B28F4932B00232372 /* Views */,
+				526C2D8329099309002445EF /* Views */,
 				52D7F26A28F492F200232372 /* Models */,
 				52C11EA428D797F100020522 /* Assets.xcassets */,
 				52C11EA628D797F100020522 /* Preview Content */,
@@ -141,15 +150,6 @@
 				52D7F27228F4943300232372 /* AccountCalculations.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		52D7F26B28F4932B00232372 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				52D7F26E28F493B300232372 /* HomeView.swift */,
-				52D7F27028F493F300232372 /* AccountView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +284,8 @@
 			files = (
 				52D7F27128F493F300232372 /* AccountView.swift in Sources */,
 				52D7F27728F7115800232372 /* ContentView.swift in Sources */,
-				52D7F26F28F493B300232372 /* HomeView.swift in Sources */,
 				52C11EA128D797ED00020522 /* DoughApp.swift in Sources */,
+				526C2D82290992F3002445EF /* HomeView.swift in Sources */,
 				52D7F27328F4943300232372 /* AccountCalculations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

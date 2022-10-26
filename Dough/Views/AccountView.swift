@@ -19,28 +19,36 @@ struct AccountView: View{
                 .frame(width: 100, height: 100)
                 .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                 
-                Text("Your Details")
+                Text("Your Money")
                     .font(.largeTitle)
                     .padding([.leading, .bottom, .trailing], 19.0)
       
-                
-                Text("Expenses")
-                    .font(.title2)
-                    .bold()
+                HStack {
+                    Text("Expenses")
+                        .font(.title2)
+                        .bold()
+                        .padding(.horizontal, 5.0)
+                    Image(systemName: "slider.vertical.3")
+                }
                 Text("$" + String(accountCalculations.expenses))
                     .padding(.vertical, 20.0)
-                
-                
-                Text("Income")
-                    .font(.title2)
-                    .bold()
+                HStack {
+                    Text("Income")
+                        .font(.title2)
+                        .bold()
+                        .padding(.horizontal, 5.0)
+                    Image(systemName: "slider.vertical.3")
+                }
                 Text("$" + String(accountCalculations.income))
                     .padding(.vertical, 20.0)
-                            
-                Text("Goals")
-                    .font(.title2)
-                    .bold()
-                    .padding(.vertical, 20.0)
+                HStack {
+                    Text("Goals")
+                        .font(.title2)
+                        .bold()
+                        .padding(.vertical, 20.0)
+                        .padding(.horizontal, 5.0)
+                    Image(systemName: "plus.circle")
+                }
                 HStack{
                     VStack{
                         Image(systemName: "airplane")
