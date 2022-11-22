@@ -13,7 +13,7 @@ struct AccountCalculations {
     
     func expenses() -> Double {
         
-        let total = expensesview.rent
+        let total = expensesview
         return total
         
     }
