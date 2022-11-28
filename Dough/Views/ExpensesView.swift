@@ -10,10 +10,10 @@ import SwiftUI
 struct ExpensesView: View {
     
     @State var string: String = ""
-    @State var double: Double = 0.0
+    @State var float: Float = 0.00
     
     func save() {
-        double = Double(string)!
+        float = Float(string)!
     }
     let formatter: NumberFormatter = {
             let formatter = NumberFormatter()
@@ -24,19 +24,15 @@ struct ExpensesView: View {
     
     var body: some View {
         Form {
-           TextField("", text: $string)
+           TextField("Expense type", text: $string)
                .disableAutocorrection(true)
            HStack {
-               Text("Cost")
                Spacer()
-               TextField("", value: $double, formatter: formatter)
+               TextField("0.00", value: $float, formatter: formatter)
                    .fixedSize()
                    .keyboardType(.decimalPad)
+               Button(action: save) { Text("Save") }
            }
-           // show live value changes
-            Text("String: \(string) Double: \(String(double))")
-            TextField("0.00", text: $string).keyboardType(.decimalPad)
-            Button(action: save) { Text("Save") }
        }
        .padding()
    }

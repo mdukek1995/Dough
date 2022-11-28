@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		524DFCB929351C540001CA72 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCB829351C530001CA72 /* Expenses.swift */; };
 		526C2D82290992F3002445EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C2D81290992F3002445EF /* HomeView.swift */; };
 		526C2D852909C012002445EF /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C2D842909C012002445EF /* ExpensesView.swift */; };
 		52C11EA128D797ED00020522 /* DoughApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C11EA028D797ED00020522 /* DoughApp.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		524DFCB829351C530001CA72 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		526C2D81290992F3002445EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		526C2D842909C012002445EF /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
 		52C11E9D28D797ED00020522 /* Dough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dough.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				52D7F27228F4943300232372 /* AccountCalculations.swift */,
+				524DFCB829351C530001CA72 /* Expenses.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				52C11EA128D797ED00020522 /* DoughApp.swift in Sources */,
 				526C2D82290992F3002445EF /* HomeView.swift in Sources */,
 				52D7F27328F4943300232372 /* AccountCalculations.swift in Sources */,
+				524DFCB929351C540001CA72 /* Expenses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

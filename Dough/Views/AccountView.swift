@@ -32,7 +32,7 @@ struct AccountView: View{
                         Image(systemName: "slider.vertical.3")
                     }
                 }
-                Text("$" + String(accountCalculations.expenses()))
+                Text("$" + String(accountCalculations.expenses))
                     .padding(.vertical, 20.0)
                 HStack {
                     Text("Income")
