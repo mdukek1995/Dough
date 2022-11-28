@@ -11,18 +11,20 @@ import Foundation
 struct AccountCalculations {
     
     
-    var expenses: Double = 1700
+    var expenses: Float = 1700
     
-    var income: Double = 2000
-    var goal: Double = 250
+    var income: Float = 2000
+    var goal: Float = 250
     
-    func excess() -> Double {
+    func excess() -> Float {
         let excessMoney = income-expenses
         return excessMoney
     }
     
-    func spendings() -> Double {
+    func spendings() -> Float {
         let spendingMoney = excess()-goal
         return spendingMoney
     }
 }
+
+

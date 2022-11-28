@@ -10,30 +10,37 @@ import SwiftUI
 struct ExpensesView: View {
     
     @State var string: String = ""
-    @State var float: Float = 0.00
+    @State var float: Float = 0
     
-    func save() {
-        float = Float(string)!
-    }
+    
     let formatter: NumberFormatter = {
             let formatter = NumberFormatter()
             formatter.numberStyle = .decimal
             return formatter
         }()
-
+    
+    func save() {
+        print("Hi")
+    }
     
     var body: some View {
         Form {
            TextField("Expense type", text: $string)
                .disableAutocorrection(true)
            HStack {
-               Spacer()
-               TextField("0.00", value: $float, formatter: formatter)
+               TextField("$", value: $float, formatter: formatter)
                    .fixedSize()
                    .keyboardType(.decimalPad)
-               Button(action: save) { Text("Save") }
+               Spacer()
            }
-       }
+            HStack {
+                Spacer()
+                Button(action: save) { Image(systemName: "chevron.down.circle.fill")
+                        .font(.system(size: 40))
+                Spacer()
+   
+            }
+            }}
        .padding()
    }
    func saveToCoreData() {
