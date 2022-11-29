@@ -20,28 +20,48 @@ struct ExpensesView: View {
         }()
     
     func save() {
-        print("Hi")
+        var totalExpenses : [String:Float] = [:]
+        totalExpenses[string]=float
+        
     }
     
     var body: some View {
-        Form {
+        VStack {
+            VStack{
            TextField("Expense type", text: $string)
                .disableAutocorrection(true)
+               .padding()
+               .background(
+                              VStack {
+                                  Spacer()
+                                  Color(UIColor.systemGray4)
+                                      .frame(height: 2)
+                              }
+                          )
            HStack {
                TextField("$", value: $float, formatter: formatter)
                    .fixedSize()
                    .keyboardType(.decimalPad)
                Spacer()
            }
+            .padding()
+        
+            }
+            .overlay {
+                       RoundedRectangle(cornerRadius: 8, style: .continuous)
+                           .stroke(Color(UIColor.systemGray4), lineWidth: 2)
+            }
+            .padding()
+    
+
             HStack {
                 Spacer()
                 Button(action: save) { Image(systemName: "chevron.down.circle.fill")
                         .font(.system(size: 40))
-                Spacer()
-   
+                    Spacer()
             }
             }}
-       .padding()
+        .padding()
    }
    func saveToCoreData() {
        // save values into core data
