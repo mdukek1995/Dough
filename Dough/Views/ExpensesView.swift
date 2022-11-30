@@ -9,26 +9,28 @@ import SwiftUI
 
 struct ExpensesView: View {
     
-    @State var string: String = ""
-    @State var float: Float = 0
+    @State var expenseType: String = ""
+    @State var cost = Float()
     
     
     let formatter: NumberFormatter = {
             let formatter = NumberFormatter()
-            formatter.numberStyle = .decimal
+            formatter.numberStyle = .currency
             return formatter
         }()
     
     func save() {
+        let value = Float(cost) 
         var totalExpenses : [String:Float] = [:]
-        totalExpenses[string]=float
-        
+        totalExpenses[expenseType]=value
+        print(totalExpenses)
     }
+    
     
     var body: some View {
         VStack {
             VStack{
-           TextField("Expense type", text: $string)
+           TextField("Expense type", text: $expenseType)
                .disableAutocorrection(true)
                .padding()
                .background(
@@ -39,7 +41,7 @@ struct ExpensesView: View {
                               }
                           )
            HStack {
-               TextField("$", value: $float, formatter: formatter)
+               TextField("$", value: $cost, formatter: formatter)
                    .fixedSize()
                    .keyboardType(.decimalPad)
                Spacer()
@@ -58,8 +60,10 @@ struct ExpensesView: View {
                 Spacer()
                 Button(action: save) { Image(systemName: "chevron.down.circle.fill")
                         .font(.system(size: 40))
+                        .padding(.leading, 8.0)
                     Spacer()
-            }
+                }
+
             }}
         .padding()
    }
