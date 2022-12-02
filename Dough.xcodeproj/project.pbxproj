@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		524DFCB929351C540001CA72 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCB829351C530001CA72 /* Expenses.swift */; };
+		524DFCBE293865DE0001CA72 /* ExpenseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCBD293865DD0001CA72 /* ExpenseTypes.swift */; };
+		524DFCC0293977690001CA72 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCBF293977690001CA72 /* TabView.swift */; };
+		524DFCC2293980850001CA72 /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCC1293980850001CA72 /* MyColors.swift */; };
 		526C2D82290992F3002445EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C2D81290992F3002445EF /* HomeView.swift */; };
 		526C2D852909C012002445EF /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C2D842909C012002445EF /* ExpensesView.swift */; };
 		52C11EA128D797ED00020522 /* DoughApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C11EA028D797ED00020522 /* DoughApp.swift */; };
@@ -18,7 +21,6 @@
 		52C11EBE28D797F200020522 /* DoughUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C11EBD28D797F200020522 /* DoughUITestsLaunchTests.swift */; };
 		52D7F27128F493F300232372 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7F27028F493F300232372 /* AccountView.swift */; };
 		52D7F27328F4943300232372 /* AccountCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7F27228F4943300232372 /* AccountCalculations.swift */; };
-		52D7F27728F7115800232372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7F27628F7115800232372 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		524DFCB829351C530001CA72 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		524DFCBD293865DD0001CA72 /* ExpenseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTypes.swift; sourceTree = "<group>"; };
+		524DFCBF293977690001CA72 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		524DFCC1293980850001CA72 /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
 		526C2D81290992F3002445EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		526C2D842909C012002445EF /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
 		52C11E9D28D797ED00020522 /* Dough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dough.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +58,6 @@
 		52C11EBD28D797F200020522 /* DoughUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52D7F27028F493F300232372 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountView.swift; path = Dough/Views/AccountView.swift; sourceTree = SOURCE_ROOT; };
 		52D7F27228F4943300232372 /* AccountCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCalculations.swift; sourceTree = "<group>"; };
-		52D7F27628F7115800232372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +88,11 @@
 		526C2D8329099309002445EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				52D7F27628F7115800232372 /* ContentView.swift */,
+				524DFCBF293977690001CA72 /* TabView.swift */,
 				52D7F27028F493F300232372 /* AccountView.swift */,
 				526C2D81290992F3002445EF /* HomeView.swift */,
 				526C2D842909C012002445EF /* ExpensesView.swift */,
+				524DFCBD293865DD0001CA72 /* ExpenseTypes.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			children = (
 				52D7F27228F4943300232372 /* AccountCalculations.swift */,
 				524DFCB829351C530001CA72 /* Expenses.swift */,
+				524DFCC1293980850001CA72 /* MyColors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,10 +296,12 @@
 			files = (
 				52D7F27128F493F300232372 /* AccountView.swift in Sources */,
 				526C2D852909C012002445EF /* ExpensesView.swift in Sources */,
-				52D7F27728F7115800232372 /* ContentView.swift in Sources */,
+				524DFCC0293977690001CA72 /* TabView.swift in Sources */,
+				524DFCBE293865DE0001CA72 /* ExpenseTypes.swift in Sources */,
 				52C11EA128D797ED00020522 /* DoughApp.swift in Sources */,
 				526C2D82290992F3002445EF /* HomeView.swift in Sources */,
 				52D7F27328F4943300232372 /* AccountCalculations.swift in Sources */,
+				524DFCC2293980850001CA72 /* MyColors.swift in Sources */,
 				524DFCB929351C540001CA72 /* Expenses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
