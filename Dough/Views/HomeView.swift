@@ -6,14 +6,13 @@
 //
 
 import SwiftUI
+import Charts
 
 struct HomeView: View {
     
     let accountCalculations = AccountCalculations().self
     
     var body: some View {
-        ZStack{
-            CustomColor.warmSheets.edgesIgnoringSafeArea(.all)
 
         ScrollView{
             VStack{
@@ -42,7 +41,6 @@ struct HomeView: View {
             }
         }
         }
-    }
     
 }
 struct HomeView_Previews: PreviewProvider {
