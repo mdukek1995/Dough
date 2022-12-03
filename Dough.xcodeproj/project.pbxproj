@@ -21,6 +21,9 @@
 		52C11EBE28D797F200020522 /* DoughUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C11EBD28D797F200020522 /* DoughUITestsLaunchTests.swift */; };
 		52D7F27128F493F300232372 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7F27028F493F300232372 /* AccountView.swift */; };
 		52D7F27328F4943300232372 /* AccountCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7F27228F4943300232372 /* AccountCalculations.swift */; };
+		52DAD187293BD98F00AA6780 /* GlassmorphismStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD186293BD98F00AA6780 /* GlassmorphismStyling.swift */; };
+		52DAD189293BDB4800AA6780 /* GradientAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD188293BDB4800AA6780 /* GradientAnimation.swift */; };
+		52DAD18B293BE85300AA6780 /* NavigationLinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD18A293BE85300AA6780 /* NavigationLinksModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		52C11EBD28D797F200020522 /* DoughUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52D7F27028F493F300232372 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountView.swift; path = Dough/Views/AccountView.swift; sourceTree = SOURCE_ROOT; };
 		52D7F27228F4943300232372 /* AccountCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCalculations.swift; sourceTree = "<group>"; };
+		52DAD186293BD98F00AA6780 /* GlassmorphismStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassmorphismStyling.swift; sourceTree = "<group>"; };
+		52DAD188293BDB4800AA6780 /* GradientAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAnimation.swift; sourceTree = "<group>"; };
+		52DAD18A293BE85300AA6780 /* NavigationLinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinksModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,9 @@
 				52D7F27228F4943300232372 /* AccountCalculations.swift */,
 				524DFCB829351C530001CA72 /* Expenses.swift */,
 				524DFCC1293980850001CA72 /* MyColors.swift */,
+				52DAD186293BD98F00AA6780 /* GlassmorphismStyling.swift */,
+				52DAD188293BDB4800AA6780 /* GradientAnimation.swift */,
+				52DAD18A293BE85300AA6780 /* NavigationLinksModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,7 +307,10 @@
 				526C2D852909C012002445EF /* ExpensesView.swift in Sources */,
 				524DFCC0293977690001CA72 /* TabView.swift in Sources */,
 				524DFCBE293865DE0001CA72 /* ExpenseTypes.swift in Sources */,
+				52DAD187293BD98F00AA6780 /* GlassmorphismStyling.swift in Sources */,
 				52C11EA128D797ED00020522 /* DoughApp.swift in Sources */,
+				52DAD189293BDB4800AA6780 /* GradientAnimation.swift in Sources */,
+				52DAD18B293BE85300AA6780 /* NavigationLinksModel.swift in Sources */,
 				526C2D82290992F3002445EF /* HomeView.swift in Sources */,
 				52D7F27328F4943300232372 /* AccountCalculations.swift in Sources */,
 				524DFCC2293980850001CA72 /* MyColors.swift in Sources */,

@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 
 struct CustomColor {
-    static let newHampshire = Color("NewHampshire")
-    static let easterEgg = Color("EasterEgg")
-    static let warmSheets = Color("WarmSheets")
-    static let valentine = Color("BeMyValentine")
-    static let crayola = Color("CrayolaMarker")
-    static let planes = Color("WatchingPlanes")
+    static let orange = Color("orange")
+    static let yellow = Color("yellow")
+    static let lightblue = Color("lightblue")
+    static let pink = Color("pink")
+    static let vibrantblue = Color("vibrantblue")
+    static let darkgreen = Color("green")
 
 }

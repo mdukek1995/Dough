@@ -10,33 +10,25 @@ import SwiftUI
 struct ExpenseTypes: View {
     var body: some View {
         NavigationView {
-            ScrollView {
                 VStack {
                     HStack {
-                        NavigationLink("Rent", destination: ExpensesView())
-                            .foregroundColor(Color.white)
-                            .padding()
-                            .padding(.horizontal, 20)
-                            .background(
-                                Color.blue
-                                    .cornerRadius(10)
-                                    .shadow(radius: 10))
-                        NavigationLink("Mortgage", destination: ExpensesView())
-                            .foregroundColor(Color.white)
-                            .padding()
-                            .padding(.horizontal, 20)
-                            .background(
-                                Color.blue
-                                    .cornerRadius(10)
-                                    .shadow(radius: 10))
+                        Spacer()
+                        NavigationLinksModel(expenseName: "Rent", iconImageName: "building.2.fill")
+                        Spacer()
+                        NavigationLinksModel(expenseName: "Mortgage", iconImageName: "house.fill")
+                        Spacer()
+                        NavigationLinksModel(expenseName: "Gas", iconImageName: "fuelpump.fill")
+                        Spacer()
                             }
                     }
                     HStack {
-                        Text("Rent")
-                        Text("Mortgage")
-                        Text("Auto Insurance")
+                        NavigationLinksModel(expenseName: "Car", iconImageName: "car.fill")
+                        Spacer()
+                        NavigationLinksModel(expenseName: "Insurance", iconImageName: "shield.fill")
+                        Spacer()
+                        NavigationLinksModel(expenseName: "School", iconImageName: "graduationcap.fill")
+                        Spacer()
                     }
-                }
             }
             .navigationTitle("Choose your expenses")
             .navigationBarTitleDisplayMode(.automatic)
