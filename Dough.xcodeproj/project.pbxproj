@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		524DFCB929351C540001CA72 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCB829351C530001CA72 /* Expenses.swift */; };
 		524DFCBE293865DE0001CA72 /* ExpenseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCBD293865DD0001CA72 /* ExpenseTypes.swift */; };
 		524DFCC0293977690001CA72 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCBF293977690001CA72 /* TabView.swift */; };
 		524DFCC2293980850001CA72 /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCC1293980850001CA72 /* MyColors.swift */; };
@@ -24,6 +23,9 @@
 		52DAD187293BD98F00AA6780 /* GlassmorphismStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD186293BD98F00AA6780 /* GlassmorphismStyling.swift */; };
 		52DAD189293BDB4800AA6780 /* GradientAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD188293BDB4800AA6780 /* GradientAnimation.swift */; };
 		52DAD18B293BE85300AA6780 /* NavigationLinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD18A293BE85300AA6780 /* NavigationLinksModel.swift */; };
+		52DAD18D293C08CB00AA6780 /* GoalTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD18C293C08CA00AA6780 /* GoalTypes.swift */; };
+		52DAD18F293C0DE600AA6780 /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD18E293C0DE600AA6780 /* GoalsView.swift */; };
+		52DAD193293C0F4C00AA6780 /* NavigationLinksModelGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD192293C0F4C00AA6780 /* NavigationLinksModelGoals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		524DFCB829351C530001CA72 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		524DFCBD293865DD0001CA72 /* ExpenseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTypes.swift; sourceTree = "<group>"; };
 		524DFCBF293977690001CA72 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		524DFCC1293980850001CA72 /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
@@ -64,6 +65,9 @@
 		52DAD186293BD98F00AA6780 /* GlassmorphismStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassmorphismStyling.swift; sourceTree = "<group>"; };
 		52DAD188293BDB4800AA6780 /* GradientAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAnimation.swift; sourceTree = "<group>"; };
 		52DAD18A293BE85300AA6780 /* NavigationLinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinksModel.swift; sourceTree = "<group>"; };
+		52DAD18C293C08CA00AA6780 /* GoalTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTypes.swift; sourceTree = "<group>"; };
+		52DAD18E293C0DE600AA6780 /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
+		52DAD192293C0F4C00AA6780 /* NavigationLinksModelGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinksModelGoals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				526C2D81290992F3002445EF /* HomeView.swift */,
 				526C2D842909C012002445EF /* ExpensesView.swift */,
 				524DFCBD293865DD0001CA72 /* ExpenseTypes.swift */,
+				52DAD18C293C08CA00AA6780 /* GoalTypes.swift */,
+				52DAD18E293C0DE600AA6780 /* GoalsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,11 +170,11 @@
 			isa = PBXGroup;
 			children = (
 				52D7F27228F4943300232372 /* AccountCalculations.swift */,
-				524DFCB829351C530001CA72 /* Expenses.swift */,
 				524DFCC1293980850001CA72 /* MyColors.swift */,
 				52DAD186293BD98F00AA6780 /* GlassmorphismStyling.swift */,
 				52DAD188293BDB4800AA6780 /* GradientAnimation.swift */,
 				52DAD18A293BE85300AA6780 /* NavigationLinksModel.swift */,
+				52DAD192293C0F4C00AA6780 /* NavigationLinksModelGoals.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,12 +315,14 @@
 				524DFCBE293865DE0001CA72 /* ExpenseTypes.swift in Sources */,
 				52DAD187293BD98F00AA6780 /* GlassmorphismStyling.swift in Sources */,
 				52C11EA128D797ED00020522 /* DoughApp.swift in Sources */,
+				52DAD193293C0F4C00AA6780 /* NavigationLinksModelGoals.swift in Sources */,
 				52DAD189293BDB4800AA6780 /* GradientAnimation.swift in Sources */,
 				52DAD18B293BE85300AA6780 /* NavigationLinksModel.swift in Sources */,
+				52DAD18D293C08CB00AA6780 /* GoalTypes.swift in Sources */,
 				526C2D82290992F3002445EF /* HomeView.swift in Sources */,
 				52D7F27328F4943300232372 /* AccountCalculations.swift in Sources */,
 				524DFCC2293980850001CA72 /* MyColors.swift in Sources */,
-				524DFCB929351C540001CA72 /* Expenses.swift in Sources */,
+				52DAD18F293C0DE600AA6780 /* GoalsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

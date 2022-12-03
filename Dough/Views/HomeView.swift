@@ -46,7 +46,7 @@ struct HomeView: View {
                             )
                         }
                         .padding(.horizontal, 40)
-                        .foregroundColor(CustomColor.vibrantblue)
+                        .foregroundColor(CustomColor.darkblue)
                     } else {
                         // Fallback on earlier versions
                     }
