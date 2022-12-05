@@ -27,51 +27,58 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            ScrollView{
-                Image("logo")
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                VStack{
-                    Spacer()
-                        .padding()
-                    Text("Goals")
-                    Spacer()
-                        .padding()
-                    if #available(iOS 16.0, *) {
-                        Chart(data) {
-                            BarMark(
-                                x: .value("goalName", $0.goalName),
-                                y: .value("Savings", $0.savingsTotal)
-                            )
-                        }
-                        .padding(.horizontal, 40)
-                        .foregroundColor(CustomColor.darkblue)
-                    } else {
-                        // Fallback on earlier versions
-                    }
-                    Spacer()
-                        .padding()
+            VStack{
+                ScrollView {
+                    Image("logo")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                     VStack{
-                        Text("You can spend")
-                        Text("$" + String(accountCalculations.spendings()))
-                            .bold()
-                        Text("and still meet your goals!")
+                        Spacer()
+                            .padding()
+                        Text("Goals")
+                        Spacer()
+                            .padding()
+                        if #available(iOS 16.0, *) {
+                            Chart(data) {
+                                BarMark(
+                                    x: .value("goalName", $0.goalName),
+                                    y: .value("Savings", $0.savingsTotal)
+                                )
+                            }
+                            .padding(.horizontal, 40)
+                            .foregroundColor(CustomColor.darkblue
+                            )
+                        } else {
+                            // Fallback on earlier versions
+                        }
+                        Spacer()
+                            .padding()
+                        VStack{
+                            Text("You can spend")
+                            Text("$" + String(accountCalculations.spendings()))
+                                .bold()
+                            Text("and still meet your goals!")
+                            
+                        }
+                        Spacer()
                         
                     }
-                    Spacer()
+                    .padding()
+                    .background(.ultraThinMaterial)
+                    .foregroundColor(Color.primary.opacity(0.35))
+                    .foregroundStyle(.ultraThinMaterial)
+                    .cornerRadius(35)
+                    .padding()
                 }
-                .padding()
-                .background(.ultraThinMaterial)
-                .foregroundColor(Color.primary.opacity(0.35))
-                .foregroundStyle(.ultraThinMaterial)
-                .cornerRadius(35)
-                .padding()
+                Button("Button") {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                }
+                Spacer()
             }
-        }
-        .background(Image("piggybank").resizable()
+            .background(Image("piggybank").resizable()
                 .edgesIgnoringSafeArea(.all))
-    }
+        }}
 }
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

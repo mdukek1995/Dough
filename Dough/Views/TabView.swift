@@ -16,17 +16,17 @@ struct BottomNav: View {
                            Image(systemName: "house.fill")
                            Text("Home")
                    }
-                   Text("Friends Screen")
+                   GoalTypes()
                        .tabItem {
                            Image(systemName: "list.star")
                            Text("Goals")
                    }
-                   Text("Nearby Screen")
+                   AccountView()
                        .tabItem {
                            Image(systemName: "creditcard.fill")
                            Text("Your Money")
         }
-                    Text("Nearby Screen")
+                    Text("User Settings")
                         .tabItem {
                             Image(systemName: "person.fill")
                             Text("Account")

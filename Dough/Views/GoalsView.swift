@@ -24,7 +24,6 @@ struct GoalsView: View {
         var body: some View {
         NavigationView{
             ZStack{
-                
                 VStack {
                     VStack{
                         TextField("Goal type", text: $goalType)

@@ -68,6 +68,7 @@ struct AccountView: View{
                             Image(systemName: "car")
                             Text("$4,200")
                         }
+                    
                     }
                     Spacer()
                 }
