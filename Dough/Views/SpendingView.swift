@@ -1,37 +1,43 @@
 //
-//  GoalsView.swift
+//  SpendingView.swift
 //  Dough
 //
-//  Created by Megan Dukek on 12/3/22.
+//  Created by Megan Dukek on 12/5/22.
 //
 
 import SwiftUI
 
+struct SpendingView: View {
+    @Environment(\.dismiss) var dismiss
 
-struct GoalsView: View {
-    @State var goalType: String = ""
-    @State var cost = Float()
-    @State var goalList : [String:Float] = [:]
-
-
-
+    @State var expense: String = ""
+    @State var total = Float()
+    
+    
+    
     let formatter: NumberFormatter = {
-            let formatter = NumberFormatter()
-            formatter.numberStyle = .currency
-            return formatter
-        }()
-
-        var body: some View {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        return formatter
+    }()
+    
+    
+    var body: some View {
         NavigationView{
-            ZStack{
                 VStack {
+                    Button("X", action: {
+                        dismiss()
+                    })
+                    .foregroundColor(Color.primary.opacity(0.50))
+                    .font(.title)
+                    .padding(.trailing, 270)
                     VStack{
-                        TextField("Goal type", text: $goalType)
+                        TextField("What did you spend money on", text: $expense)
                             .disableAutocorrection(true)
                             .padding()
                             .modifier(FlatGlassView())
                         HStack {
-                            TextField("$", value: $cost, formatter: formatter)
+                            TextField("$", value: $total, formatter: formatter)
                                 .padding()
                                 .keyboardType(.decimalPad)
                                 .modifier(FlatGlassView())
@@ -42,10 +48,10 @@ struct GoalsView: View {
                     }
                     .padding()
                     .background(.ultraThinMaterial)
-                    .foregroundColor(Color.primary.opacity(0.35))
+                    .foregroundColor(Color.primary.opacity(0.60))
                     .foregroundStyle(.ultraThinMaterial)
                     .cornerRadius(35)
-                    .padding()
+    
                     
                     
                     HStack {
@@ -61,23 +67,18 @@ struct GoalsView: View {
                                 .cornerRadius(14)
                                 .shadow(radius: 5, x: 5, y:5))
                         .padding()
-                        
+                        }
+                    Spacer()
                     }
-                    
-                }}
+    
+            }
             .padding()
         }
+    func save() {}
     }
-    func save() {
-        @State var value = Float(cost)
-        goalList[goalType]=value
-    }
-
-
-    }
-
-struct GoalsView_Previews: PreviewProvider {
+    
+struct SpendingView_Previews: PreviewProvider {
     static var previews: some View {
-        GoalsView()
+        SpendingView()
     }
 }

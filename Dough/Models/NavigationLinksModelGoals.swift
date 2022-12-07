@@ -25,11 +25,15 @@ struct NavigationLinksModelGoals: View {
                     Text(goalName)
                         .foregroundColor(Color.white)
                         .bold()
+                        .scaledToFit()
+                        .minimumScaleFactor(0.01)
+                        .lineLimit(1)
                 }
             }
             .padding()
+            .frame(maxWidth:.infinity)
             .background(
-                CustomColor.purple
+                CustomColor.lightblue
                     .cornerRadius(10)
                     .shadow(radius: 5, x: 5, y:5))
         }

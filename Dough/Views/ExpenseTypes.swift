@@ -12,42 +12,47 @@ struct ExpenseTypes: View {
         NavigationView {
                 VStack {
                     HStack {
-                        Spacer()
                         NavigationLinksModel(expenseName: "Rent", iconImageName: "building.2.fill")
-                        Spacer()
                         NavigationLinksModel(expenseName: "Mortgage", iconImageName: "house.fill")
-                        Spacer()
+                            .frame(
+                            minWidth: 130)
+
                         NavigationLinksModel(expenseName: "Gas", iconImageName: "fuelpump.fill")
-                        Spacer()
                     }
                     .padding()
                     HStack {
-                        Spacer()
-                        NavigationLinksModel(expenseName: "Insurance", iconImageName: "shield.fill")
-                        Spacer()
+
+                        NavigationLinksModel(expenseName: "Insurance"
+                          , iconImageName: "shield.fill")
+                        .frame(
+                        minWidth: 130)
+           
                         NavigationLinksModel(expenseName: "Car", iconImageName: "car.fill")
-                        Spacer()
+     
                         NavigationLinksModel(expenseName: "School", iconImageName: "graduationcap.fill")
-                        Spacer()
+         
                     }
                     .padding()
                     HStack {
-                        Spacer()
+      
                         NavigationLinksModel(expenseName: "Utilities", iconImageName: "lightbulb.fill")
-                        Spacer()
+            
                         NavigationLinksModel(expenseName: "Medicine", iconImageName: "cross.case.fill")
-                        Spacer()
+                            .frame(
+                            minWidth: 110)
+          
                         NavigationLinksModel(expenseName: "Daycare", iconImageName: "figure.and.child.holdinghands")
-                        Spacer()
+                
                     }
                     .padding()
                     NavigationLinksModel(expenseName: "Other", iconImageName: "questionmark")
+                        .frame(maxWidth: 360)
                     
                 }
             }
             .navigationTitle("Choose your expenses")
             .navigationBarTitleDisplayMode(.automatic)
-            .navigationBarHidden(true)
+            .navigationBarHidden(false)
         }
     }
 

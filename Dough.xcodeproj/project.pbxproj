@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522BE44C293E997E00F830A8 /* SpendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522BE44B293E997E00F830A8 /* SpendingView.swift */; };
+		522BE44E2940DE9F00F830A8 /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522BE44D2940DE9F00F830A8 /* IncomeView.swift */; };
+		522BE4502940F8BE00F830A8 /* GoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522BE44F2940F8BE00F830A8 /* GoalList.swift */; };
 		524DFCBE293865DE0001CA72 /* ExpenseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCBD293865DD0001CA72 /* ExpenseTypes.swift */; };
 		524DFCC0293977690001CA72 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCBF293977690001CA72 /* TabView.swift */; };
 		524DFCC2293980850001CA72 /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCC1293980850001CA72 /* MyColors.swift */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		522BE44B293E997E00F830A8 /* SpendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingView.swift; sourceTree = "<group>"; };
+		522BE44D2940DE9F00F830A8 /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
+		522BE44F2940F8BE00F830A8 /* GoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalList.swift; sourceTree = "<group>"; };
 		524DFCBD293865DD0001CA72 /* ExpenseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTypes.swift; sourceTree = "<group>"; };
 		524DFCBF293977690001CA72 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		524DFCC1293980850001CA72 /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
@@ -102,9 +108,12 @@
 				52D7F27028F493F300232372 /* AccountView.swift */,
 				526C2D81290992F3002445EF /* HomeView.swift */,
 				526C2D842909C012002445EF /* ExpensesView.swift */,
+				522BE44B293E997E00F830A8 /* SpendingView.swift */,
+				522BE44D2940DE9F00F830A8 /* IncomeView.swift */,
 				524DFCBD293865DD0001CA72 /* ExpenseTypes.swift */,
 				52DAD18C293C08CA00AA6780 /* GoalTypes.swift */,
 				52DAD18E293C0DE600AA6780 /* GoalsView.swift */,
+				522BE44F2940F8BE00F830A8 /* GoalList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,15 +319,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D7F27128F493F300232372 /* AccountView.swift in Sources */,
+				522BE44E2940DE9F00F830A8 /* IncomeView.swift in Sources */,
 				526C2D852909C012002445EF /* ExpensesView.swift in Sources */,
 				524DFCC0293977690001CA72 /* TabView.swift in Sources */,
 				524DFCBE293865DE0001CA72 /* ExpenseTypes.swift in Sources */,
 				52DAD187293BD98F00AA6780 /* GlassmorphismStyling.swift in Sources */,
+				522BE4502940F8BE00F830A8 /* GoalList.swift in Sources */,
 				52C11EA128D797ED00020522 /* DoughApp.swift in Sources */,
 				52DAD193293C0F4C00AA6780 /* NavigationLinksModelGoals.swift in Sources */,
 				52DAD189293BDB4800AA6780 /* GradientAnimation.swift in Sources */,
 				52DAD18B293BE85300AA6780 /* NavigationLinksModel.swift in Sources */,
 				52DAD18D293C08CB00AA6780 /* GoalTypes.swift in Sources */,
+				522BE44C293E997E00F830A8 /* SpendingView.swift in Sources */,
 				526C2D82290992F3002445EF /* HomeView.swift in Sources */,
 				52D7F27328F4943300232372 /* AccountCalculations.swift in Sources */,
 				524DFCC2293980850001CA72 /* MyColors.swift in Sources */,

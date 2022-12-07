@@ -21,11 +21,14 @@ struct ExpensesView: View {
             return formatter
         }()
     
+    func save() {
+        totalExpenses[expenseType]=cost
+        print(totalExpenses)
+        }
     
     var body: some View {
         NavigationView{
             ZStack{
-                
                 VStack {
                     VStack{
                         TextField("Expense type", text: $expenseType)
@@ -44,7 +47,7 @@ struct ExpensesView: View {
                     }
                     .padding()
                     .background(.ultraThinMaterial)
-                    .foregroundColor(Color.primary.opacity(0.35))
+                    .foregroundColor(Color.primary.opacity(0.60))
                     .foregroundStyle(.ultraThinMaterial)
                     .cornerRadius(35)
                     .padding()
@@ -52,13 +55,17 @@ struct ExpensesView: View {
                     
                     HStack {
                         Spacer()
-                        Button(action: save) { Image(systemName: "chevron.down.circle.fill")
-                                .padding(.trailing, 40.0)
-                                .font(.system(size: 40))
-                                .foregroundColor(CustomColor.darkblue)
-                                .shadow(color: CustomColor.lightblue.opacity(0.5),
-                                        radius: 5, x:2, y:2)
+                        Button("SAVE"){
+                            save()
                         }
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .foregroundColor(CustomColor.mint)
+                        .background(
+                            CustomColor.darkblue
+                                .cornerRadius(14)
+                                .shadow(radius: 5, x: 5, y:5))
+                        .padding()
                         
                     }
                     
@@ -66,11 +73,8 @@ struct ExpensesView: View {
             .padding()
         }
    }
-    func save() {
-        @State var value = Float(cost)
-        totalExpenses[expenseType]=value
-        print(totalExpenses)
-    }
+
+    
 }
 struct ExpensesView_Previews: PreviewProvider {
     static var previews: some View {

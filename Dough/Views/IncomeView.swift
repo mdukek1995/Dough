@@ -1,37 +1,45 @@
 //
-//  GoalsView.swift
+//  IncomeView.swift
 //  Dough
 //
-//  Created by Megan Dukek on 12/3/22.
+//  Created by Megan Dukek on 12/7/22.
 //
 
 import SwiftUI
 
+import SwiftUI
 
-struct GoalsView: View {
-    @State var goalType: String = ""
-    @State var cost = Float()
-    @State var goalList : [String:Float] = [:]
+struct IncomeView: View {
+    @Environment(\.dismiss) var dismiss
 
-
-
+    @State var expense: String = ""
+    @State var total = Float()
+    
+    
+    
     let formatter: NumberFormatter = {
-            let formatter = NumberFormatter()
-            formatter.numberStyle = .currency
-            return formatter
-        }()
-
-        var body: some View {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        return formatter
+    }()
+    
+    
+    var body: some View {
         NavigationView{
-            ZStack{
                 VStack {
+                    Button("X", action: {
+                        dismiss()
+                    })
+                    .foregroundColor(Color.primary.opacity(0.50))
+                    .font(.title)
+                    .padding(.trailing, 270)
                     VStack{
-                        TextField("Goal type", text: $goalType)
+                        TextField("How did you make money?", text: $expense)
                             .disableAutocorrection(true)
                             .padding()
                             .modifier(FlatGlassView())
                         HStack {
-                            TextField("$", value: $cost, formatter: formatter)
+                            TextField("$", value: $total, formatter: formatter)
                                 .padding()
                                 .keyboardType(.decimalPad)
                                 .modifier(FlatGlassView())
@@ -42,7 +50,7 @@ struct GoalsView: View {
                     }
                     .padding()
                     .background(.ultraThinMaterial)
-                    .foregroundColor(Color.primary.opacity(0.35))
+                    .foregroundColor(Color.primary.opacity(0.60))
                     .foregroundStyle(.ultraThinMaterial)
                     .cornerRadius(35)
                     .padding()
@@ -63,21 +71,16 @@ struct GoalsView: View {
                         .padding()
                         
                     }
-                    
-                }}
+                    Spacer()
+                }
+            }
             .padding()
         }
+    func save() {}
     }
-    func save() {
-        @State var value = Float(cost)
-        goalList[goalType]=value
-    }
-
-
-    }
-
-struct GoalsView_Previews: PreviewProvider {
+    
+struct IncomeView_Previews: PreviewProvider {
     static var previews: some View {
-        GoalsView()
+        IncomeView()
     }
 }

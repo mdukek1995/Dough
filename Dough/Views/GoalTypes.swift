@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GoalTypes: View {
+    
     var body: some View {
         NavigationView {
                 VStack {
@@ -31,12 +32,12 @@ struct GoalTypes: View {
                         Spacer()
                     }
                     .padding()
-                   
+                    
                     HStack {
                         Spacer()
                         NavigationLinksModelGoals(goalName: "Phone", iconImageName: "iphone")
                         Spacer()
-                        NavigationLinksModelGoals(goalName: "Computer", iconImageName: "laptopcomputer")
+                        NavigationLinksModelGoals(goalName: "Tech", iconImageName: "laptopcomputer")
                         Spacer()
                         NavigationLinksModelGoals(goalName: "Camera", iconImageName: "camera.fill")
                         Spacer()
@@ -63,14 +64,18 @@ struct GoalTypes: View {
                     }
                     .padding()
                     NavigationLinksModelGoals(goalName: "Other", iconImageName: "questionmark")
+                        .frame(maxWidth: 360)
+
                     
                 }
+
             }
             .navigationTitle("Choose your expenses")
             .navigationBarTitleDisplayMode(.automatic)
-            .navigationBarHidden(true)
+            .navigationBarHidden(false)
         }
     }
+
 
 struct GoalTypes_Previews: PreviewProvider {
     static var previews: some View {

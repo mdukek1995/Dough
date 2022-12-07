@@ -28,6 +28,7 @@ struct NavigationLinksModel: View {
                 }
             }
             .padding()
+            .frame(maxWidth:.infinity)
             .background(
                 CustomColor.orange
                     .cornerRadius(10)
