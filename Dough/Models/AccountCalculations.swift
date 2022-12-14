@@ -7,23 +7,26 @@
 
 import Foundation
 
-struct AccountCalculations {
-    //calculating financials -will need user input//
-   // let accountView = AccountView.self
 
-    //let expenses = accountView.expenses
-   // let income = accountView.income
-    var income: Double = 2000
-    var expenses: Double = 1700
-    var goal: Double = 250
+struct AccountCalculations {
+    var totalExpenses = ExpensesView().totalExpenses
     
-    func excess() -> Double {
+    let expenses = ExpensesView().totalExpenses.compactMap { $0.value }.reduce(0, +)
+    
+ 
+    
+    var income: Float = 2000.00
+    var goal: Float = 250.00
+    
+    func excess() -> Float {
         let excessMoney = income-expenses
         return excessMoney
     }
     
-    func spendings() -> Double {
+    func spendings() -> Float {
         let spendingMoney = excess()-goal
         return spendingMoney
     }
 }
+
+

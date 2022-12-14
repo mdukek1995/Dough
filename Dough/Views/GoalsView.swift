@@ -1,37 +1,32 @@
 //
-//  ExpensesView.swift
+//  GoalsView.swift
 //  Dough
 //
-//  Created by Megan Dukek on 10/26/22.
+//  Created by Megan Dukek on 12/3/22.
 //
 
 import SwiftUI
 
-struct ExpensesView: View {
-    
-    @State var expenseType: String = ""
-    @State var cost = Float()
-    @State var totalExpenses : [String:Float] = [:]
 
-    
-    
+struct GoalsView: View {
+    @State var goalType: String = ""
+    @State var cost = Float()
+    @State var goalList : [String:Float] = [:]
+
+
+
     let formatter: NumberFormatter = {
             let formatter = NumberFormatter()
             formatter.numberStyle = .currency
             return formatter
         }()
-    
-    func save() {
-        totalExpenses[expenseType]=cost
-        print(totalExpenses)
-        }
-    
-    var body: some View {
+
+        var body: some View {
         NavigationView{
             ZStack{
                 VStack {
                     VStack{
-                        TextField("Expense type", text: $expenseType)
+                        TextField("Goal type", text: $goalType)
                             .disableAutocorrection(true)
                             .padding()
                             .modifier(FlatGlassView())
@@ -47,7 +42,7 @@ struct ExpensesView: View {
                     }
                     .padding()
                     .background(.ultraThinMaterial)
-                    .foregroundColor(Color.primary.opacity(0.60))
+                    .foregroundColor(Color.primary.opacity(0.35))
                     .foregroundStyle(.ultraThinMaterial)
                     .cornerRadius(35)
                     .padding()
@@ -72,12 +67,17 @@ struct ExpensesView: View {
                 }}
             .padding()
         }
-   }
+    }
+    func save() {
+        @State var value = Float(cost)
+        goalList[goalType]=value
+    }
 
-    
-}
-struct ExpensesView_Previews: PreviewProvider {
+
+    }
+
+struct GoalsView_Previews: PreviewProvider {
     static var previews: some View {
-        ExpensesView()
+        GoalsView()
     }
 }
